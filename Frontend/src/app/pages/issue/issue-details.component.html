@@ -1,0 +1,12 @@
+﻿<ng-container *transloco="let t">
+    <spiderly-card [title]="t('Issue')" icon="pi pi-file-edit">
+
+        <issue-base-details
+        [formGroup]="formGroup" 
+        [issueFormGroup]="issueFormGroup" 
+        (onSave)="onSave()"
+        [getCrudMenuForOrderedData]="getCrudMenuForOrderedData"
+        />
+
+    </spiderly-card>
+</ng-container>

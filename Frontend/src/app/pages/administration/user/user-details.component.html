@@ -1,0 +1,14 @@
+<ng-container *transloco="let t">
+    <user-extended-base-details
+    [panelTitle]="userExtendedFormGroup.getRawValue().email ?? null"
+    panelIcon="pi pi-user"
+    [formGroup]="formGroup" 
+    [userExtendedFormGroup]="userExtendedFormGroup" 
+    (onSave)="onSave()" 
+    [showIsDisabledForUserExtended]="showIsDisabledControl"
+    [showHasLoggedInWithExternalProviderForUserExtended]="showHasLoggedInWithExternalProvider"
+    [showReturnButton]="false"
+    [authorizedForSaveObservable]="authorizedForSaveObservable"
+    (onIsAuthorizedForSaveChange)="isAuthorizedForSaveChange($event)"
+    ></user-extended-base-details>
+</ng-container>
